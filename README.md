@@ -31,8 +31,8 @@ Most mini quads today use a flightcontroller which has an STM32 chip on it, depe
 The flight controller needs software to run, in order to do the function we want it to. There are couple of opensource softwares to choose from like Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts. We chose INAV as the flight control software as it met all the requirements and has some of the best GPS modes available.
 
 ##Related projects
- **4-axis Hotwire cutter**
- **CNC Drag knife**
+ [**4-axis Hotwire cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)
+ [**CNC Drag knife**](https://github.com/rahulsarchive/cncdragknife)
 ##INAV
 
 ##Version 0.5 (Trainer)
@@ -41,6 +41,11 @@ Wingspan: 600mm (Polyhedral)
 Sweep: Nil
 AUW: 800g
 Power plant: 2212 1000kv motor (10x4.7 prop)
+
+![open uav](Images/t1.jpg)
+
+![open uav](Images/t2.jpg)
+
 
 We decided to make a trainer aircraft as our first plane. This will help us understand all concepts of aerodynamics and and give us a first hand experience in contruction techniques, control mechanisms, and learning to fly an aircraft.
 
@@ -60,19 +65,34 @@ Sweep: 30 deg
 AUW: 870g
 Power plant: 2212 1000kv motor (10x4.7 prop)
 
+
+
+
 This is our first attempt at making a flying wing. This wing will be made from styrofoam and since a hot wire cutter is the most efficient way to cut foam, we decided to built a 4-axis CNC hotwire cutter to help us make the wing cores. Its been a blast making it, see the repo for the documentation.
+![open uav](Images/dw1.png)
 
 After a bit of reasearch on lfying wings, we settled on the parameters and started working on the design.The wing will have a wingspan of 800mm, swept back at and angle of 30deg and have a blunt nose fuselange in between to carry all the payload. The hot wire cutter helped us tremendousely in cutting out the wing cores. 
 
+![open uav](Images/hw1.jpg)
+
+![open uav](Images/hw3.jpg)
+
+![open uav](Images/asm1.jpg)
 For additional strenght we decided to do a composite on the wing cores with wood glue and paper towels. This gave us a hard and rigid outer shell which can take the impact of landings. This shell was coverd with a layer of packing tape to seall all the rough edges and then a layer of vinyl tape to provide some colour.
 
+![open uav](Images/asm2.jpg)
+
+![open uav](Images/asm3.jpg)
 The wing is very light weight with the foam cores and has a tough shell to protect it in impacts. The motor mounts were laser cut on 3mm birch wood and joined to the wing with glue. Though originally desinged for a 2205 2600kv motor. In the end we had to go with a 2212 1000kv motor running a 10x4.7 prop.
 
 We realized one problem when tried to balance the CG of the wing. There was not enough weight on the front to get the CG where we wanted, even with the bigger batttery the plane was still tail heavy. For the intial maiden we added bit of nose weight to bring the CG forward.
 
 The maiden did not go successfully. It was very difficult to control and came down nose first. The wing was very heavy and barely had enough thrust to get it flying. We realized that even though we designed for a 30deg sweep angle, after construction, the sweep was around 24deg. This pused the CG point forward and there was not enough weight in the front to balance it.
 
+![open uav](Images/asm4.jpg)
+
 we tried putting a flight controller in it to help in stablizing the craft. We were able to fly with the help of flight controller. The model is still too tail heavy and the plane does not have enough thrust to carry the extra nose weight.
+![open uav](Images/ph1.jpg)
 
 ###Lessons learned
 
@@ -81,5 +101,29 @@ we tried putting a flight controller in it to help in stablizing the craft. We w
 3. Manually flying them are hard, unless you have a lot of experience.
 4. Adding a flight controller helps with stability and leveling the aircraft.
 
+## Version 1.5
+
+![open uav](Images/dw2.png)
+
+![open uav](Images/dw3.png)
+
+
 ##Version 2.0
+
+![open uav](Images/nw0.png)
+
+![open uav](Images/nw01.png)
+
+![open uav](Images/nw1.jpg)
+
+![open uav](Images/nw2.jpg)
+
+![open uav](Images/mw3.jpg)
+
+![open uav](Images/mw4.jpg)
+
+
+
+
+
 
