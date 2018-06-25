@@ -30,17 +30,17 @@ Most mini quads today use a flightcontroller which has an STM32 chip on it, depe
 
 The flight controller needs software to run, in order to do the function we want it to. There are couple of opensource softwares to choose from like Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts. We chose INAV as the flight control software as it met all the requirements and has some of the best GPS modes available.
 
-##Related projects
- [**4-axis Hotwire cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)
- [**CNC Drag knife**](https://github.com/rahulsarchive/cncdragknife)
-##INAV
+## Related projects
+ [**4-axis Hotwire cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)  
+ [**CNC Drag knife**](https://github.com/rahulsarchive/cncdragknife)  
+## INAV  
 
-##Version 0.5 (Trainer)
+## Version 0.5 (Trainer)
 
-Wingspan: 600mm (Polyhedral)
-Sweep: Nil
-AUW: 800g
-Power plant: 2212 1000kv motor (10x4.7 prop)
+Wingspan: 600mm (Polyhedral)  
+Sweep: Nil  
+AUW: 800g  
+Power plant: 2212 1000kv motor (10x4.7 prop)  
 
 ![open uav](Images/t1.jpg)
 
@@ -58,12 +58,12 @@ The model is a 3-channel aircraft made from 3mm coroplast sheets and joined toge
 It is a dream to fly. Very stable aircraft, once you got it dialed in. Easily hand launched The elevator and rudders are very sensitive. The battery we used was a 3S 3800mah lipo, A bit heavy for this model but this puts the CG where we want it. Being a heavier battery, it needs to fly a little fast and if I let go of the throttle the plane would come down quickly.
 
 
-##Version 1.0 (phenoix)
+## Version 1.0 (phenoix)
 
-Wingspan: 800mm
-Sweep: 30 deg
-AUW: 870g
-Power plant: 2212 1000kv motor (10x4.7 prop)
+Wingspan: 800mm  
+Sweep: 30 deg  
+AUW: 870g  
+Power plant: 2212 1000kv motor (10x4.7 prop)  
 
 
 
@@ -78,7 +78,7 @@ After a bit of reasearch on lfying wings, we settled on the parameters and start
 ![open uav](Images/hw3.jpg)
 
 ![open uav](Images/asm1.jpg)
-For additional strenght we decided to do a composite on the wing cores with wood glue and paper towels. This gave us a hard and rigid outer shell which can take the impact of landings. This shell was coverd with a layer of packing tape to seall all the rough edges and then a layer of vinyl tape to provide some colour.
+For additional strenght we decided to do a composite on the wing cores with wood glue and paper towels. This gave us a hard and rigid outer shell which can take the impact of landings. This shell was coverd with a layer of packing tape to seal all the rough edges and then a layer of vinyl tape to provide some colour.
 
 ![open uav](Images/asm2.jpg)
 
@@ -94,12 +94,12 @@ The maiden did not go successfully. It was very difficult to control and came do
 we tried putting a flight controller in it to help in stablizing the craft. We were able to fly with the help of flight controller. The model is still too tail heavy and the plane does not have enough thrust to carry the extra nose weight.
 ![open uav](Images/ph1.jpg)
 
-###Lessons learned
+### Lessons learned
 
-1. The single biggest factor that controls the characteristics of a flying wing is the CG.
-2. Wings are very sensitive in the pitch axis and sluggish in the roll axis
-3. Manually flying them are hard, unless you have a lot of experience.
-4. Adding a flight controller helps with stability and leveling the aircraft.
+1. The single biggest factor that controls the characteristics of a flying wing is the CG.  
+2. Wings are very sensitive in the pitch axis and sluggish in the roll axis.  
+3. Manually flying them are hard, unless you have a lot of experience.  
+4. Adding a flight controller helps with stability and leveling the aircraft.  
 
 ## Version 1.5
 
@@ -115,8 +115,6 @@ we tried putting a flight controller in it to help in stablizing the craft. We w
 ![open uav](Images/nw01.png)
 
 ![open uav](Images/nw1.jpg)
-
-![open uav](Images/nw2.jpg)
 
 ![open uav](Images/mw3.jpg)
 
