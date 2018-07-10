@@ -123,7 +123,7 @@ The model has an all up weight of 800 grams and flies with a 1000kv motor runnin
 It is a dream to fly. Very stable aircraft, once you got it dialed in. Easily hand launched The elevator and rudders are very responsive. The battery we used was a 3S 3800mah lipo, A bit heavy for this model but this puts the CG where we want it. Being a heavier battery, it needs to fly a little fast and if I let go of the throttle the plane would come down quickly.
 
 
-## Version 1.0 (phenoix)
+## Version 1.0 (Phenoix, Cark Y foam wing)
 
 Wingspan: 800mm  
 Sweep: 30 deg  
@@ -202,7 +202,7 @@ This is our first version of our wing using a KFm6 airfoil. The center fuselage 
 We decided to keep this on hold until we test out the KFm airfoils on more simpler airframes. 
 
 
-## Version 2.0 (KFM6)
+## Version 2.0 (Albatross, KFM6 wing)
 
 Wingspan: 1000mmm   
 Sweep: 35 deg  
@@ -238,14 +238,55 @@ The final assembly with all the layers stuck together.
 
 ![open uav](Images/V2.0/mw3.jpg)
 
+The maiden went beautifully, the KFm performed well, the wing resisted tip stalling and glides like its on rails.Because of the sweep, the COG balances prefectly with a 3800mah 3S lipo. Takes off at about 70% throttle and cruises at 50%. Since we used coroplast, the wing is a bit heavy for a 1m wing span model, as such needs to fly a bit faster to maintain altitude. 
 
-## Version 2.1 (KFM4 Wing trainer)
+The wing loading on the plane is a bit higher with an area of 28dm^2 and AUW of 1200g. This needs an expert level of control to keep the craft in the air.
+
+### Note
+
+1. Sweep provides dihedral stability and COG leverage.
+2. Coroplast is heavier, when desigining a model, built it at 1.5 times scale.
+3. 1m wingspan and 28dm^2 wing area is not enough for a 1.2kg model. Wing cube loading puts it in the acrobatic range.
+4. choose a motor with a thrust greater than the weight of the model.
+
+
+## Version 2.1 (TomCat, KFM4 Wing)
 
 Wingspan: 1200mmm   
 Sweep: 35 deg  
+Root chord: 320mm
+Tip chord: 260mm
 AUW: 1000g  
 Power plant: 2826 1500kv motor (9X6 prop) 
-*Fusion/Rhino*
+
+We decided to built a bigger and lighter version of the wing, it will have lighter wing loading and can fly more slowly.
+
+![open uav](Images/V2.1/v21b.png)
+
+The wing is made from **5mm depron** sheets, depron is much more easier to work with than coroplast. It is lighter and can be bend when heated. The wing is made by stacking 4 layers of depron sheets to from the KFm4 airfoil.
+![open uav](Images/V2.1/tm1.jpg)
+
+The layers are stuck together with hotglue and syntetic resin. There is thin laminating layer on the depron which provides strength, if you remove the layer by sanding, it will weaken the structure.
+
+![open uav](Images/V2.1/tm2.jpg)
+
+We laminated the wing with black packing tape. The tape provides the strenght for the model, we used a thicker tape and the weight of the model increased by 100g. Light weight packing tape would be a better choice.
+
+![open uav](Images/V2.1/tm3.jpg)
+
+The stripes are added for effect. It does make the wing look cool.
+
+![open uav](Images/V2.1/tm4.jpg)
+
+The wing flies beautifully, it glides forever. Very good slow flying characteristics and controllability. When flying slow wind does push the craft around, buut once you get some speed it flies like an arrow. Very little relex on the elevons was need to keep it level.
+
+
+### Note
+
+1. Don't be afraid of building bigger wings, they have far more stable and have good slow flying characteristics.
+2. Hot glue is heavy, use it sparingly.
+3. Depron bonds well with polyurethane glue, for lighter build, can use ordinary glue stick.
+4. Built elevons a bit bigger to increase responsiveness at slow speeds.
 
 
 ##Resources 
