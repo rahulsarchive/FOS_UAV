@@ -61,9 +61,11 @@ The two most important parameters when desiging an aircraft are the **Center of 
 So the wing is lifting up and the tail is pushing down to keep the plane stable. If the COG is too far forward the wing has to push down even more and the wing has to make more lift to counter this effect. The inverse is also true, if the COG is too far back then the tail has to push up to keep the plane level, this is not a stable condition and its very difficult to fly a tail-heavy plane.
 
 ![open uav](Images/Software/ReflexWing.gif)
+
 A wing emulates a stable flying conditon by having a forward COG and using its Elevons (Elevator+ Aeilerons) to pitch the wing up, A term known as **Reflex** in which the elevons are kept at a slight up to push the tail down and pitch up the wing. This is not without consequences, the more forward the COG the more the elevons have to pitch up, there by creating more induced drag. The next parameter which influences the COG and hence the stability is the **Sweep Angle**.
 
 ![open uav](Images/Software/sweep.gif)
+
  Sweep is importart because it provides leverage for the COG to act. The COG needs to be at about 25-30% of the chord, in a rectangular wing, this is very close to the leading edge and will not provide enough leverage to balance the COG, so we need a long fuselage in front of the wing to carry the weight.
 
 In a wing, the CG needs to be at about 20-30% of the **Mean aerodynamic chord**, whcih takes into account the root and tip chord and the sweep angle. In simple terms, the more the sweep, the farther back the COG can be and the more leverage you can get. But the more the sweep the less the lift is produces per wingspan. Sweep also has another effect, it acts like a **Dihedral**
@@ -71,12 +73,9 @@ In a wing, the CG needs to be at about 20-30% of the **Mean aerodynamic chord**,
 A **Dihedaral** is a slight angle between the wings to provide stability. When one wing dips, it produces more lift than the other wing and the aircraft comes back to level. A side effect being, it will cause the wing to wobble, as the side facing the wind will have more lift than the trailing wing.
 
 
-### Wing parameter selection
-sweep, chord, CG, Airfoil, Elevon) General paramters and how they affect flight characterisitcs.
+Flying wings are a lot harder to control as they are inherently unstable aircrafts. They are very sensitive to the changes in Center of Gravity (CG) and flying them manually is a skill.
 
-Flying wings are a lot harder to control as they are inherently unstable aircrafts. They do not have a tail to stabilise the pitch axis and no yaw control. They are very sensitive to the changes in Center of Gravity (CG) and flying them manually is a skill.
-
-Since our objective is to get stable data, flying them manually is not an option. This is where a flight controller comes in. We can use the recent boom in mini racing quads to get cheap and efficent flight controllers.
+Since our objective is to get stable data, flying them manually is not an option. This is where a flight controller comes in, it will keep the craft stable and provide additional features.
 
 ### Power plant selection
 	motor specification+ prop+ battery how they affect flight characterictic
@@ -84,13 +83,13 @@ Since our objective is to get stable data, flying them manually is not an option
 
 ### Flight controller
 
-**A bit about what flight controller does and the functionalities**
+A Flight controller is basically an inertial measurement unit (IMU) plus a couple of sensors and a processor to read the sensors and act on the motors. It si constantly monitoring the orientation of the craft and trying to keep it level against outside disturbances. Most flight controller can run software which provides a host of abilities like GPS navigation, Auto-land/take-off etc.
 
-**Various version and how we arrived at this**
+There are a many open-source flight controllers designed for fixed wing like the **APM** and **Pixhawk**. But we can use the mini race quad boom to get cheap and efficient flight controllers.
 
-Most mini quads today use a flightcontroller which has an STM32 chip on it, depending on the performance required, they range from F1 to F7. we settled on an STM32F4 flight controller which is a happy medium between performance and the number of devices that can be connected.
+Most mini quads today use a flightcontroller which has an STM32 chip on it, depending on the performance required, they range from F1 to F7 series. we settled on an STM32F4 flight controller which is a happy medium between performance and the number of devices that can be connected to it.
 
-The flight controller needs software to run, in order to do the function we want it to. There are couple of opensource softwares to choose from like Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts. We chose INAV as the flight control software as it met all the requirements and has some of the best GPS modes available.
+The flight controller needs software to run. There are couple of opensource softwares to choose from like Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts. We chose INAV as the flight control software as it met all the requirements and has some of the best GPS modes available.
 
 
 
@@ -131,11 +130,6 @@ Sweep: 30 deg
 AUW: 870g  
 Power plant: 2212 1000kv motor (10x4.7 prop)  
 
-### Calculations
-AUW, WIngloading, motor selection, prop selection, stall speed
-
-
-
 This is our first attempt at making a flying wing. This wing will be made from styrofoam and since a hot wire cutter is the most efficient way to cut foam, we decided to built a 4-axis CNC hotwire cutter to help us make the wing cores. Its been a blast making it, see the repo for the documentation.
 ![open uav](Images/V1.0/dw1.png)
 
@@ -169,37 +163,81 @@ we tried putting a flight controller in it to help in stablizing the craft. We w
 3. Manually flying them are hard, unless you have a lot of experience or very low wing loading.  
 4. Adding a flight controller helps with stability and leveling the aircraft.  
 
-### Choosing an airfoil KFM
+### Choosing an Airfoil 
+
+In our version #2 build, we used the Clark y airfoil for the wing but it did not perform as well as we expected, after a bit of research on tip stalling and how to avoid it in a wing, we stumbled upon the **KFm airfoils**. On paper they seemed very good, so we decided to try them out.
+
+![open uav](Images/Software/KFm3.jpg)
+
+The KF stands for Kline and Foggleman who were the designers of the KF airfoils. Unlike a conventional smooth airfoil. The KFm airfoil uses a series of layers to create stepped airfoils.
+
+There are a number of KF variations, That use a combination of layers and positioning to produce a wing that can be made to emulate what a normal wing airfoil profiles.
+
+![open uav](Images/Software/kfm.jpg)
+
+Drawn up by Dick Kline these give some basic guide numbers  for the various combinations that have been tried. The guide numbers however are open to changes, going thinner will always work, going a bit thicker will often work, go too thick and it wont work. 
+
+The percentage thickness refers to each sections total thickness vs the total chord of the wing, and not the height of the step. The height of the step is only determined by the thickness of your foam sheet. Steps can be raised to give more height and the step effect increases proportionaly with both height and air speed.
+
+The basic stepped airfoil idea is that there will be a vortex produced behind each step that fills in the gap and lets the air flow over over the wing as though  the gap was solid and profiled.
+
+For more details, check the RCgroups form on KFm theory and science.
+
+[Kline-Fogleman-(KFm) Airfoils Advanced Theory Science](https://www.rcgroups.com/forums/showthread.php?1296458-**-Kline-Fogleman-(KFm)-Airfoils-Advanced-Theory-Science-**)
+
+#### Some positive characteristics of KFm airfoils
+
+1. It can handle a wide range of speeds form very slow to fast.  
+2. It has much greater range for its center of gravity, it could be moved as much as 40% back, since the entire rear section of the wing is producing lift.  
+3. It has very good stall characterisitcs and it retards tip stalling in a flying wing.  
 
 ## Version 1.5
+
+This is our first version of our wing using a KFm6 airfoil. The center fuselage is designed to carry a camera, two 2500mah lipo, the flight controller and the motor. It needs to be strong to survive impacts and protect the electronics.
 
 ![open uav](Images/V1.5/dw2.png)
 
 ![open uav](Images/V1.5/dw3.png)
+
+We decided to keep this on hold until we test out the KFm airfoils on more simpler airframes. 
 
 
 ## Version 2.0 (KFM6)
 
 Wingspan: 1000mmm   
 Sweep: 35 deg  
+root chord: 300mm
+tip chord: 250mm
 AUW: 1200g  
 Power plant: 2826 1500kv motor (9X6 prop) 
 
-*insert rhino screenshots*
+Learning from our previous wing build, we decided to increase the sweep angle to 35 deg to push the COG backwards, so the wing would balace with less weight upfront. This wing will be an all foam construction and will accomodate a battery plate to house all the electronics.
 
 ![open uav](Images/V2.0/nw0.png)
 
+The wing will have six layers in total, two base layers and two KFm steps on top and bottom. With all the extra foam, the construction will be heavy.
+
 ![open uav](Images/V2.0/nw01.png)
+
+The motor mount is designed to sequrely hold on to the layers of foam. Its a minimal design and provides resonable sturdiness when attached to the foam.
 
 ![open uav](Images/V2.0/mm1.png)
 
+The two locking clips on the top and bottom, provides assurance that the motor plate won't come loose from the assembly. The entire part is covered in a syntetic resin to provide strength and resist vibration.
+
+The 3D model is converted into **DXF** format and made sutitable for CNC cutting. The design is cut on **Shopbot PRS alpha 3-axis CNC mill** using the [CNC Drag knife](https://github.com/rahulsarchive/cncdragknife) we designed. 
+
+
 ![open uav](Images/V2.0/cut1.png)
+
+We did not have depron foam available with us, so we decided to use **Coroplast** for the construction. It's heavier than depron but is also much stronger, it can take impact well and binds well with hotglue and syntetic rubber adhesives.
 
 ![open uav](Images/V2.0/nw1.jpg)
 
+The final assembly with all the layers stuck together.
+
 ![open uav](Images/V2.0/mw3.jpg)
 
-![open uav](Images/V2.0/mw4.jpg)
 
 ## Version 2.1 (KFM4 Wing trainer)
 
