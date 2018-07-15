@@ -18,7 +18,7 @@ Our goal is to build a suitable fixed wing platform that can carry the necessary
 Our constrains being, it must be simple to make, and easy to use. All the hardware and software are low cost and open-source, without sacrificing saftey and usability.
 
 ## Related projects
- [**4-axis Hotwire cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)  
+ [**4-Axis Hotwire Foam Cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)  
  [**CNC Drag knife**](https://github.com/rahulsarchive/cncdragknife)  
 
 # Mapping Process
@@ -98,7 +98,7 @@ The flight controller needs software to run. There are couple of opensource soft
 
 
 
-## Hardware BOM
+## Hardware 
 
 *Sheet  
 list*
@@ -134,7 +134,7 @@ Sweep: 30 deg
 AUW: 870g  
 Power plant: 2212 1000kv motor (10x4.7 prop)  
 
-This is our first attempt at making a flying wing. This wing will be made from styrofoam and since a hot wire cutter is the most efficient way to cut foam, we decided to built a 4-axis CNC hotwire cutter to help us make the wing cores. Its been a blast making it, see the repo for the documentation.
+This is our first attempt at making a flying wing. This wing will be made from styrofoam and since a hot wire cutter is the most efficient way to cut foam, we decided to built a [4-axis CNC hotwire cutter](https://github.com/rahulsarchive/4AxisFoamCutter) to help us make the wing cores. Its been a blast making it, see the repo for the documentation.
 ![open uav](Images/V1.0/dw1.png)
 
 After a bit of reasearch on fying wings, we settled on the parameters and started working on the design.The wing will have a wingspan of 800mm, swept back at and angle of 30deg and have a blunt nose fuselange in between to carry all the payload. The hot wire cutter helped us tremendousely in cutting out the wing cores. 
