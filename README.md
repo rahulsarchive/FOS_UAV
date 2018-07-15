@@ -46,6 +46,10 @@ it can process a collection of images into point clouds, Digital surface models,
 
 ## Mission planner
 
+![open uav](Images/Software/mwp.png)
+
+Mission Planner is a ground control station for Plane, Copter and Rover. It can be used as a configuration utility or as a dynamic control supplement for your autonomous vehicle. It can be used to configure and tune your vehicle, plan and load autonomus gps way-point missions. With proper telemetry hardware, it can provide the live status of the vehicle, record telemetry data and operate the vehicle in FPV (first person view)
+
 # Hardware
 
 ## Design consideration
@@ -78,8 +82,8 @@ Flying wings are a lot harder to control as they are inherently unstable aircraf
 Since our objective is to get stable data, flying them manually is not an option. This is where a flight controller comes in, it will keep the craft stable and provide additional features.
 
 ### Power plant selection
-	motor specification+ prop+ battery how they affect flight characterictic
-
+	
+	motor specification+ prop+ battery 
 
 ### Flight controller
 
@@ -156,7 +160,7 @@ The maiden did not go successfully. It was very difficult to control and came do
 we tried putting a flight controller in it to help in stablizing the craft. We were able to fly with the help of flight controller. The model is still too tail heavy and the plane does not have enough thrust to carry the extra nose weight.
 ![open uav](Images/V1.0/ph1.jpg)
 
-### Lessons 
+### Note 
 
 1. The single biggest factor that controls the characteristics of a flying wing is the CG.  
 2. Wings are very sensitive in the pitch axis and sluggish in the roll axis.  
@@ -238,6 +242,8 @@ The final assembly with all the layers stuck together.
 
 ![open uav](Images/V2.0/mw3.jpg)
 
+![open uav](Images/V2.0/nw2.jpg)
+
 The maiden went beautifully, the KFm performed well, the wing resisted tip stalling and glides like its on rails.Because of the sweep, the COG balances prefectly with a 3800mah 3S lipo. Takes off at about 70% throttle and cruises at 50%. Since we used coroplast, the wing is a bit heavy for a 1m wing span model, as such needs to fly a bit faster to maintain altitude. 
 
 The wing loading on the plane is a bit higher with an area of 28dm^2 and AUW of 1200g. This needs an expert level of control to keep the craft in the air.
@@ -272,11 +278,12 @@ The layers are stuck together with hotglue and syntetic resin. There is thin lam
 
 We laminated the wing with black packing tape. The tape provides the strenght for the model, we used a thicker tape and the weight of the model increased by 100g. Light weight packing tape would be a better choice.
 
-![open uav](Images/V2.1/tm3.jpg)
+![open uav](Images/V2.1/tm4.jpg)
 
 The stripes are added for effect. It does make the wing look cool.
 
-![open uav](Images/V2.1/tm4.jpg)
+![open uav](Images/V2.1/tm5.jpg)
+
 
 The wing flies beautifully, it glides forever. Very good slow flying characteristics and controllability. When flying slow wind does push the craft around, buut once you get some speed it flies like an arrow. Very little relex on the elevons was need to keep it level.
 
