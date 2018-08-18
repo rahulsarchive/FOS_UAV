@@ -30,6 +30,13 @@ Multiple data can be infered from the orthomosaic like, ground elevation, water 
 
 # Software
 
+## Ardupilot
+![open uav](Images/Software/ardu.jpg)
+
+Ardupilot is one of the most advanced open source autopilot solution, it has been there the longest and has an active community developing it. The firmware support a wide range of vechiles from airborne to terrestrial and even underwater. It is paired with a suitable ground control software to bring out is full functionalities.
+
+In the latest release of Ardupilot they moved onto the Chibios platform and have now extended support for some of the common STM32 F4 flight controllers like the Omnibus F4 and the Matek F405 wing. We will be using this version and testing the features, the new firmware is still in beta and being actively developed.
+
 ## INAV
 ![open uav](Images/Software/inav.png)
 
