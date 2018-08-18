@@ -294,6 +294,43 @@ The wing flies beautifully, it glides forever. Very good slow flying characteris
 4. Built elevons a bit bigger to increase responsiveness at slow speeds.
 
 
+### Version 3.0 (OrangeFury)
+
+Wingspan: 1400mmm   
+Sweep: 30 deg  
+Root chord: 380mm
+Tip chord: 220mm
+AUW: 1500g  
+Power plant: 3520 1400kv motor (9X6 prop) 
+
+This will be a slightly bigger wing than the previous one, we want it to carry a downward facing camera for arieal mapping purposes. 
+
+![open uav](Images/V3.0/V3 (1).png)
+
+![open uav](Images/V3.0/V3 (2).png)
+
+It will be a heavier version witha slighly longer wingspan and reduced sweep angle to bring the CG forward as we will be putting a 6000mah (2X3S) battery and Gopro in the front.
+
+![open uav](Images/V3.0/V3 (5).png)
+
+The battery plate with the provisons for attaching two Gopro cameras, one facing downwards and other facing forwards. It will support 2X 2600 mah batteries, a flght controller and receiver.
+
+![open uav](Images/V3.0/V3 (3).png)
+
+The design made ready for cutting in the CNC machine using a Drag Knife. 
+
+![open uav](Images/V3.0/V3 (4).png)
+
+The parts are split apart and arranged to provide the most economical use of material and provide strength where needed and reduce weight were not needed.
+
+![open uav](Images/V3.0/V3 (6).png)
+
+The motor plate with the larger base and  stronger supports for the bigger motor.
+
+![open uav](Images/V3.0/V31.jpg)
+
+
+
 ##Resources 
 
 
