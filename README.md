@@ -44,7 +44,7 @@ it can process a collection of images into point clouds, Digital surface models,
 
 ## Mission planner
 
-![open uav](Images/Software/mwp.png)
+![open uav](Images/Software/mp.jpg)
 
 Mission Planner is a ground control station for Plane, Copter and Rover. It can be used as a configuration utility or as a dynamic control supplement for your autonomous vehicle. It can be used to configure and tune your vehicle, plan and load autonomus gps way-point missions. With proper telemetry hardware, it can provide the live status of the vehicle, record telemetry data and operate the vehicle in FPV (first person view)
 
