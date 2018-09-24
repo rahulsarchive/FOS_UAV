@@ -329,6 +329,23 @@ The motor plate with the larger base and  stronger supports for the bigger motor
 
 ![open uav](Images/V3.0/v31.jpg)
 
+The wing is fitted with the MatekF405 flight controller, an Frsky S8r radio, SIK radio telemetry, Skywalker 60A ESC, DYS 3536 1100Kv motor
+
+![open uav](Images/V3.0/v311.jpg)
+
+## Version 4.0
+
+![open uav](Images/V4.0/01.jpeg)
+
+![open uav](Images/V4.0/02.jpeg)
+
+![open uav](Images/V4.0/1.jpeg)
+
+![open uav](Images/V4.0/2.jpeg)
+
+![open uav](Images/V4.0/5.jpeg)
+
+![open uav](Images/V4.0/6.jpeg)
 
 
 ##Resources 
