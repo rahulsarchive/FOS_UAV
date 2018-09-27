@@ -4,7 +4,9 @@ The aim of this project is to develop an open source aerial mapping platform usi
 
 ![open uav](Images/ICFOSS.png)
 
-FOS UAV is part of the Drone research program by [ICFOSS](https://icfoss.in/) (International Center for Free and Open Source Software)
+FOS UAV is part of the Drone Research Program by [ICFOSS](https://icfoss.in/) (International Center for Free and Open Source Software)
+
+## Overview
 
 Most UAV's today are multirotors, they have the advantage of being able to hover and carry more payload like sensors and other auxilaries. But with the current battery technology, multirotors have a flight time in the range of 15- 20 mins, without compromising on the payload. They make good inspection drones in tight spots and hard to reach places. But because of the way they fly, they brun through a lot of  power, hence limiting the flight time and maximum range.
 
