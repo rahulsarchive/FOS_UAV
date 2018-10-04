@@ -309,7 +309,7 @@ Sweep: 30 deg
 Root chord: 380mm
 Tip chord: 220mm
 AUW: 1500g  
-Power plant: 3520 1400kv motor (9X6 prop) 
+Power plant: 3530 1400kv motor (9X6 prop) 
 
 This will be a slightly bigger wing than the previous one, we want it to carry a downward facing camera for arieal mapping purposes. 
 
@@ -341,19 +341,52 @@ The wing is fitted with the MatekF405 flight controller, an Frsky S8r radio, SIK
 
 ![open uav](Images/V3.0/v311.jpeg)
 
-## Version 4.0
+The wing was big and heavy, but the material choice was poor, the coroplast was sagging at the ends, the frame as a whole is not rigid enough and the flight chracteristics were not as good as expected, its a bit tail heavy.
 
-![open uav](Images/V4.0/01.jpeg)
+### Note
+
+1. Coroplast is not suited for bigger wingspan.
+2. The sweep angle was too shallow, and the plane became tail-heavy.
+3. Airfoil benefits of KFm4 were missing, it behaved like a plank.
+
+## Version 4.0 (Stingray, KFM6)
+
+Wingspan: 1250mmm   
+Sweep: 30 deg  
+Root chord: 380mm
+Tip chord: 220mm
+AUW: 1300g  
+Power plant: 3530 1400kv motor (9X6 prop) 
+
+Considering all the things we learned from the previous model we decided to build a new model with some modifications like, switching from to a KFm6 airfoil and building the plane out of 5mm Depron, which is much lighter.
+
+Cutting Depron in Shopbot CNC mill. The frame is made form multiple sheets stacked on top.
 
 ![open uav](Images/V4.0/02.jpeg)
 
+The arrangement showing how the pieces fit together.
+
 ![open uav](Images/V4.0/1.jpeg)
+
+The model after assembling.
 
 ![open uav](Images/V4.0/2.jpeg)
 
+Finishes sticking all the parts together and made a fuselage out of depron for housing all the electronics.
+
 ![open uav](Images/V4.0/5.jpeg)
 
+The Elevons sanded to give the airfoil shape. and attached to body uing Nylon hinges.
+
 ![open uav](Images/V4.0/6.jpeg)
+
+The finished airframe with a painted body and tape covering to protect it from damage.
+
+![open uav](Images/V4.0/v4.jpeg)
+
+The wing flies well, it needs a 5000mah battery and a Gopro in front to balance out the CG but once its balanced, it flies well, good glide slope and stall characteristics. The KFm6 seems to work well with this airframe.
+
+
 
 
 ## Resources 
