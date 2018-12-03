@@ -179,14 +179,14 @@ The hardware is low cost and reliable, and can be obtained off-the-shellf
 | 10.	| **Sik Telemetry Radio 433Mhx** | Dual-way Telemetry Radio | **1** |
 | 11.	| **5mm Depron Sheet** | 5mm XPS Sheet | **10** |
 
-#### All previous design iterations can be found on the [Build Log](https://github.com/rahulsarchive/FOS_UAV/tree/master/Build%20Log)
+### All previous design iterations can be found on the [Build Log](https://github.com/rahulsarchive/FOS_UAV/tree/master/Build%20Log)
 
 ## Version 4.0 (Stingray, KFM6)
 
 **Wingspan: 1250mmm   
 Sweep: 30 deg  
-Root chord: 380mm
-Tip chord: 220mm
+Root chord: 380mm  
+Tip chord: 220mm  
 AUW: 1300g  
 Power plant: 3536 1400kv motor (9X6 prop)** 
 
@@ -229,8 +229,6 @@ The wing flies well, it needs a 5000mah battery and a Gopro camera in front to b
 
 
 
-
-## Resources 
 
 
 
