@@ -193,7 +193,7 @@ Power plant: 3536 1400kv motor (9X6 prop)**
 
 The design of the wing was influenced by our previous iteration (Tomcat), depron is good material for construction. The current model is designed to carry a lot more weight than its predecessors, hence the sweep angle is reduced to 30 deg to account for the change in center of gravity.
 
-![open uav](Images/V4.0/02.jpeg)
+![open uav](Images/V3.0/1.png)
 
 The wing is made by stacking the depron sheets on top of each other and glued together. This allows for rapid prototyping and repair in case of a crash. The design can be cut by hand with a ruler and knife, there is very little curves to cut.
 
