@@ -179,43 +179,49 @@ The hardware is low cost and reliable, and can be obtained off-the-shellf
 | 10.	| **Sik Telemetry Radio 433Mhx** | Dual-way Telemetry Radio | **1** |
 | 11.	| **5mm Depron Sheet** | 5mm XPS Sheet | **10** |
 
+#### All previous design iterations can be found on the (**Build Log**)[https://github.com/rahulsarchive/FOS_UAV/tree/master/Build%20Log]
 
 ## Version 4.0 (Stingray, KFM6)
 
-Wingspan: 1250mmm   
+**Wingspan: 1250mmm   
 Sweep: 30 deg  
 Root chord: 380mm
 Tip chord: 220mm
 AUW: 1300g  
-Power plant: 3536 1400kv motor (9X6 prop) 
+Power plant: 3536 1400kv motor (9X6 prop)** 
 
-Considering all the things we learned from the previous model we decided to build a new model with some modifications like, switching from to a KFm6 airfoil and building the plane out of 5mm Depron, which is much lighter.
 
-Cutting Depron in Shopbot CNC mill. The frame is made form multiple sheets stacked on top.
+The design of the wing was influenced by our previous iteration (Tomcat), depron is good material for construction. The current model is designed to carry a lot more weight than its predecessors, hence the sweep angle is reduced to 30 deg to account for the change in center of gravity.
 
 ![open uav](Images/V4.0/02.jpeg)
 
-The arrangement showing how the pieces fit together.
+The wing is made by stacking the depron sheets on top of each other and glued together. This allows for rapid prototyping and repair in case of a crash. The design can be cut by hand with a ruler and knife, there is very little curves to cut.
+
+For ease of fabrication we exported the design as 2D profiles and cut them out on Shopbot 3-axis mill.
+
+![open uav](Images/V4.0/02.jpeg)
+
+The parts are easy to fit together and designed in a way to prevent concentration of stress points (Glue joints) at a single place. The two base pieces provide a foundation on which rest of the pieces are stuck. The joint is reinforced by top plates and the KFm airfoils are stuck on top.
 
 ![open uav](Images/V4.0/1.jpeg)
 
-The model after assembling.
+The arrangement provide a easy and rugged frame for the wing.
 
 ![open uav](Images/V4.0/2.jpeg)
 
-Finishes sticking all the parts together and made a fuselage out of depron for housing all the electronics.
+All the pieces are stuck together with syntetic resin adhesive, a polyurethane glue like Uhu Por is recommended. Sticking the parts together is simple and provides a strong bond, which prevents bending.
 
 ![open uav](Images/V4.0/5.jpeg)
 
-The Elevons sanded to give the airfoil shape. and attached to body uing Nylon hinges.
+The Elevons sanded to give an airfoil shape and attached to body uing Nylon hinges. The Nylon hinges provide a smooth travel of the elevons.
 
 ![open uav](Images/V4.0/6.jpeg)
 
-The finished airframe with a painted body and tape covering to protect it from damage.
+The airframe is finished by spray painting and covering it with a layer of tape. The tape provides tensile strength to the body and acts a protective outer shell. Strieps added for visual effect!
 
 ![open uav](Images/V4.0/v4.jpeg)
 
-The wing flies well, it needs a 5000mah battery and a Gopro in front to balance out the CG but once its balanced, it flies well, good glide slope and stall characteristics. The KFm6 seems to work well with this airframe.
+The wing flies well, it needs a 5000mah battery and a Gopro camera in front to balance out the CG but once its balanced, it flies like on rails, good glide slope and stall characteristics. The KFm6 seems to work well with this airframe.
 
 ![open uav](Images/V4.0/v41.jpeg)
 

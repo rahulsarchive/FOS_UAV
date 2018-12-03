@@ -1,26 +1,6 @@
-# FOS_UAV
+# Build Log
 
-The aim of this project is to develop an open source aerial mapping platform using standard hardware and to develop a workflow from data acquisition to data processing. 
-
-![open uav](../../Images/ICFOSS.png)
-
-FOS UAV is part of the Drone Research Program by [ICFOSS](https://icfoss.in/) (International Center for Free and Open Source Software)
-
-## Overview
-
-Most UAV's today are multirotors, they have the advantage of being able to hover and carry more payload like sensors and other auxilaries. But with the current battery technology, multirotors have a flight time in the range of 15- 20 mins, without compromising on the payload. They make good inspection drones in tight spots and hard to reach places. But because of the way they fly, they brun through a lot of  power, hence limiting the flight time and maximum range.
-
-Fixed winged aircrafts fly on the principle of aerodynamic lift and are far more efficient at covering ground than multirotors. Even though they are considerably harder to design and build, they make up for with efficiency.
-
-Our goal is to build a suitable fixed wing platform that can carry the necessary payload and provide usable data for arieal mapping. The craft needs to carry a good GPS system, a downward facing camera for taking ../Images, and be able to fly missions autonomysly.
-
-Our constrains being, it must be simple to make, and easy to use. All the hardware and software are low cost and open-source, without sacrificing saftey and usability.
-
-## Related projects
- [**4-Axis Hotwire Foam Cutter**](https://github.com/rahulsarchive/4AxisFoamCutter)  
- [**CNC Drag knife**](https://github.com/rahulsarchive/cncdragknife)  
-
-
+This is the log of our design and iteration process, it details the things we did and what we learned from them.
 
 ## Version 1.0 (Phenoix, Cark Y foam wing)
 
