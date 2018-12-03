@@ -179,7 +179,7 @@ The hardware is low cost and reliable, and can be obtained off-the-shellf
 | 10.	| **Sik Telemetry Radio 433Mhx** | Dual-way Telemetry Radio | **1** |
 | 11.	| **5mm Depron Sheet** | 5mm XPS Sheet | **10** |
 
-#### All previous design iterations can be found on the (Build Log)[https://github.com/rahulsarchive/FOS_UAV/tree/master/Build%20Log]
+#### All previous design iterations can be found on the [Build Log](https://github.com/rahulsarchive/FOS_UAV/tree/master/Build%20Log)
 
 ## Version 4.0 (Stingray, KFM6)
 
