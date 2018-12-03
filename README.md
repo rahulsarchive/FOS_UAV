@@ -89,25 +89,70 @@ Since our objective is to get stable data, flying them manually is not an option
 
 ### Power plant selection
 	
-	motor specification+ prop+ battery 
+The power plant in an electric aircraft is not just the Motor alone, but a combination of Motor, Propeller, and the battery. The battery can be thought of as both the energy source and the supercharger. When a motor is under load, it will pull a lot of amps, and the battery must be capable of supplying it.
+
+Batteries are rated for their capacity and discharge rating. The capacity is the totoal amount of charge it can hold, bigger mAh gives longer flight times, but are also heavy. The discharge rating, denoted by 'C rating' is the max amount of current it can deliver at a time.
+
+**Max current from battery = mAh x C rating.**
+
+Select good batteries with high discharge rating, so that it can keep up with the motor.
+
+
+The motors are rated in watts for the amount of power they deliver. Now how they deliver that power depends on the motor specifications namely,
+
+1. Higher Kv motor spin faster, use smaller propellers, consumes a lot of current and are generally used for high speed aircraft.  
+2. Lower Kv motor spin slower, use large propeller, produce lots of thrust, consumes less current, Generally used for larger planes with big props.  
+3. The numbers on the motors generally indicate the size of the stator eg - 2212 1000kv motor, means stator dia is 22 mm and height is 12 mm.  
+4. Larger diameter motors produce more thrust. Taller motors are stable at higher speeds.  
+
+
+The propeller converts the mechanical energy from the motor into thrust. They are specified by their diameter and pitch. A "5X4 prop" has 5 inch diamter and 4 inch pitch. 
+
+Generally,
+
+1. Larger props produce more thrust, smaller props are more responsive.  
+2. Always match motor to propeller. Lower Kv pairs with larger props and vice versa.    
+3. For efficiency, go for the larges prop you can fit on the aircraft.  
+4. Larger props produce more thrust, higher pitch gives faster speed.
+
 
 ### Flight controller
 
-A Flight controller is basically an inertial measurement unit (IMU) plus a couple of sensors and a processor to read the sensors and act on the motors. It si constantly monitoring the orientation of the craft and trying to keep it level against outside disturbances. Most flight controller can run software which provides a host of abilities like GPS navigation, Auto-land/take-off etc.
+A Flight controller is basically an inertial measurement unit (IMU) plus a couple of sensors and a processor to read the sensors and act on the motors. It is constantly monitoring the orientation of the craft and trying to keep it level against outside disturbances. Most flight controller can run software which provides a host of abilities like GPS navigation, Auto-land/take-off etc.
 
 There are a many open-source flight controllers designed for fixed wing like the **APM** and **Pixhawk**. But we can use the mini race quad boom to get cheap and efficient flight controllers.
 
 Most mini quads today use a flightcontroller which has an STM32 chip on it, depending on the performance required, they range from F1 to F7 series. we settled on an STM32F4 flight controller which is a happy medium between performance and the number of devices that can be connected to it.
 
-The flight controller needs software to run. There are couple of opensource softwares to choose from like Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts. We chose INAV as the flight control software as it met all the requirements and has some of the best GPS modes available.
+The flight controller needs software to run. There are couple of opensource softwares to choose from like Ardupilot, Betaflight, Cleanflight, INAV etc. Most softwares are geared towards multirotors but there are a few which support fixed wing crafts.
+
+We chose Ardupilot as the flight control software as it met all the requirements and has good mission planning capabilities.
 
 
 
 
 ## Hardware 
 
-*Sheet  
-list*
+The hardware is low cost and reliable, and it can be obtained off-the-shellf
+
+### Bill of Materials
+
+| Sl No | Item | Description | Qty |
+| --- | --- | --- | :--: |
+| 1.	| **Matek F405 wing** | STM32F405 Flight Controller | **1** |
+| 2.	| **Beitian BN-880 GPS module** | GPS Receiver | **1** |
+| 3.	| **DYS D3536  1000KV** | 1000Kv 700W motor | **1** |
+| 4.	| **SkyWalker 60A Esc** | 60A ESC | **1** |
+| 5.	| **Towerpro MG90S Servo** | 9g Metal Gear Servo | **2** |
+| 6.	| **Pushrod connectors** | Servo pushrod connectors | **2** |
+| 7.	| **Gemfan 9X6 Prop** | 9X6 prop | **1** |
+| 8.	| **Tattu 5000mAh 30C** | Lipo Battery | **1** |
+| 9.	| **Frsky S8R Receiver** | Frsky Telemetry receiver | **1** |
+| 10.	| **Sik Telemetry Radio 433Mhx** | Dual-way Telemetry Radio | **1** |
+| 11.	| **5mm Depron Sheet** | 5mm XPS Sheet | **10** |
+
+
+
 
 
 ## Version 0.5 (Trainer)
