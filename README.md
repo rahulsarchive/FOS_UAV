@@ -225,7 +225,11 @@ The wing flies well, it needs a 5000mah battery and a Gopro camera in front to b
 
 ![open uav](Images/V4.0/v41.jpeg)
 
+## Version 5.0 VTOL Tailsitter
 
+![open uav](Images/VTOL/V1.0/Terrawing.png)
+
+A 1m wingspan 2.5Kg AUW Vertical take-off and landing Tail-sitter aircraft.
 
 
 
