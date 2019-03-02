@@ -227,7 +227,7 @@ The wing flies well, it needs a 5000mah battery and a Gopro camera in front to b
 
 ### Flight Test
 
-[![FOS_UAV](https://img.youtube.com/vi/VQGO6bCqtgY/0.jpg)](https://www.youtube.com/watch?v=VQGO6bCqtgY)
+[![FOS_UAV](https://img.youtube.com/vi/VQGO6bCqtgY/1.jpg)](https://www.youtube.com/watch?v=VQGO6bCqtgY)
 
 ## Version 5.0 VTOL Tailsitter
 
