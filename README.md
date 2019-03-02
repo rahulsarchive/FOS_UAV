@@ -221,7 +221,7 @@ The airframe is finished by spray painting and covering it with a layer of tape.
 
 ![open uav](Images/V4.0/v4.jpeg)
 
-The wing flies well, it needs a 5000mah battery and a Gopro camera in front to balance out the CG but once its balanced, it flies like on rails, good glide slope and stall characteristics. The KFm6 seems to work well with this airframe.
+The wing flies well, it needs a 5000mah battery and a Gopro camera in front to balance out the CG but once its balanced, it flies like on rails, good glide slope and stall characteristics. The KFm6 seems to work well with this air frame.
 
 ![open uav](Images/V4.0/v41.jpeg)
 
