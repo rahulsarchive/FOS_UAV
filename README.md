@@ -42,7 +42,7 @@ In the latest release of Ardupilot they moved onto the Chibios platform and have
 Inav is a flight control software, which was forked from Clean Flight. The software supports both multi-rotors and fixed wings and has good GPS modes like Return to launch (RTH) etc. The software has a mission planner, which allows for setting full autopilot GPS way-point navigation. It supports a variety of Flight controller boards and is actively being developed by the community.
 
 
-## Open drone maps
+## OpenDroneMap
 
 ![open uav](Images/Software/odm.png)
 
