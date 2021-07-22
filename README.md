@@ -46,7 +46,7 @@ Inav is a flight control software, which was forked from Clean Flight. The softw
 
 ![open uav](Images/Software/odm.png)
 
-OpenDroneMap is an open source toolkit for processing aerial drone imagery. Open drone maps turns the images captures by the drone into three dimensional geographic data that can be used in combination with other geographic datasets.
+OpenDroneMap is an open source toolkit for processing aerial drone imagery. OpenDroneMap turns the images captures by the drone into three dimensional geographic data that can be used in combination with other geographic datasets.
 
 it can process a collection of images into point clouds, Digital surface models, Digital Elevation Models etc.
 
